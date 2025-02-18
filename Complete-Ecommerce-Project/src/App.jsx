@@ -20,11 +20,15 @@ import UpdateProduct from './pages/admin/page/UpdateProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from './pages/allproducts/Allproducts';
+import Track from './components/track/Track';
+import Premium from './components/premium';
 function App() {
   return (
     <MyState>
       <Router>
         <Routes>
+          <Route path='/track' element={<Track />} />
+          <Route path='/premium' element={<Premium />} />
           <Route path="/" element={<Home />} />
           <Route path="/allproducts" element={<Allproducts />} />
           <Route path="/order" element={

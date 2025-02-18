@@ -55,7 +55,7 @@ function ProductCard() {
                                         {/* Product Image */}
                                         <div onClick={() => window.location.href = `/productinfo/${id}`}
                                             className="flex justify-center cursor-pointer">
-                                            <img className="rounded-2xl w-full h-80 p-2 hover:scale-110 transition-transform duration-300 ease-in-out"
+                                            <img className="rounded-2xl w-full h-80 p-2 hover:scale-110 transition-transform duration-300 ease-in-out object-cover"
                                                 src={imageUrl1} alt={title} />
                                         </div>
 

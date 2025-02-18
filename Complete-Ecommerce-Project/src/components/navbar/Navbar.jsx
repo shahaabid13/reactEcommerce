@@ -21,11 +21,11 @@ function Navbar() {
 
   return (
     <div className='sticky top-0 z-50 w-full'>
-      <header className="relative bg-blue-1000">
+      <header className="relative bg-blue-500">
         <nav 
           className="px-4 sm:px-6 lg:px-8 shadow-xl flex items-center justify-between"
           style={{
-            backgroundColor: '#0A1931', // Dark blue background
+            backgroundColor: '#0A1900', // Dark blue background
             color: mode === 'dark' ? 'white' : '',
           }}
         >
@@ -44,15 +44,15 @@ function Navbar() {
           {/* Logo */}
           <Link to={'/'} className='flex items-center space-x-3'>
             <img src="/images/logo1.PNG" alt="Logo" className="w-14 h-14 rounded-full object-cover" />
-            <h1 
-              className="text-3xl font-bold text-white"
+            <h3 
+              className="text-2xl font-bold text-white"
               style={{ 
                 fontFamily: "'Merriweather', serif", // Professional font
                 letterSpacing: '1px' // Slight spacing for elegance
               }}
             >
-              HUNAR-Pashmina
-            </h1>
+              Hunar-Pashmina
+            </h3>
           </Link>
           
           {/* Desktop Menu */}
